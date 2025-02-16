@@ -1,105 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Karla:ital,wght@0,200..800;1,200..800&family=Moderustic:wght@300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #eeee;
+    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
 }
 
-/* main container */
-.c_main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.calculator {
+    border: 3px solid #e3e3e3;
+    padding: 20px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgb(166, 123, 171);
+}
+
+input {
+    width: 320px;
+    border: none;
+    padding: 25px;
+    margin: 10px;
+    background: transparent;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px #00000021;
+    color: #000;
     border-radius: 10px;
-    width: 500px;
-    height: 600px;
-    box-shadow: 0px 0px 100px black;
 }
-/* end */
 
-
-
-/* content box */
-.c_content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 90%;
-    width: 90%;
+input::placeholder {
+    color: #000;
 }
-/* end */
 
-
-
-/* calculate area box */
-.c_area{
-    width: 100%;
-    height: 100px;
-    box-shadow: 0px 0px 5px rgb(98, 95, 95);
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-/* end */
-
-
-
-/* number box */
-.box{
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    height: 100px;
-    padding: 5px 0px;
-}
-/* end */
-
-
-
-/* clear button */
-.clear{
-    background: rgb(250, 67, 67);
-}
-/* end */
-
-
-
-/* equal to box */
-.c_equal{
-    width: 95%;
-    height: 100px;
-}
-.c_equal button{
-    margin-top: 10px;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    font-weight: 600;
-    background: skyblue;
-    box-shadow: 2px 2px 5px rgb(98, 95, 95);
+button {
     border: none;
-}
-/* end */
-
-
-/* all box btn */
-.box button{
-    height: 100%;
-    width: 90px;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10%;
+    background: transparent;
+    color: #000;
     font-size: 20px;
-    font-weight: 600;
-    border: none;
-    box-shadow: 2px 2px 5px rgb(98, 95, 95);
-    border-radius: 5px;
+    box-shadow: -8px -8px 15px #00000021;
+    cursor: pointer;
+    transition: .2s;
 }
-/* end */
+
+button:active {
+    transform: scale(.9);
+}
+
+.equalBtn {
+    background-color: rgb(209, 0, 209);
+    box-shadow: -8px -8px 15px #00000021;
+}
+
+.operator {
+    color: rgb(209, 0, 209);
+}
